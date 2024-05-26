@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "auto-feed-animals",
+	"version": "${version}",
+	"name": "Auto Feed Animals",
+	"description": "",
+	"authors": [
+		"catmoska"
+	],
+	"contact": {
+		"homepage": "https://catmoska.pp.ua/",
+		"sources": "https://github.com/catmoska/AutoFeedAnimals"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/auto-feed-animals/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.catmoska.auto_feed_animals.AutoFeedAnimals"
+		],
+		"client": [
+			"com.catmoska.auto_feed_animals.AutoFeedAnimalsClient"
+		]
+	},
+	"mixins": [
+		"auto-feed-animals.mixins.json",
+		{
+			"config": "auto-feed-animals.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.0",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
