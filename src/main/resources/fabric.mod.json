@@ -3,7 +3,7 @@
 	"id": "auto-feed-animals",
 	"version": "${version}",
 	"name": "Auto Feed Animals",
-	"description": "Automatically feeds cows and sheep if there is wheat in hand",
+	"description": "Automatically feeds animals if there is food in hand",
 	"authors": [
 		"catmoska"
 	],
