@@ -6,7 +6,7 @@ import net.minecraft.text.Style;
 import net.minecraft.text.Text;
 
 public class Setings {
-	public static boolean OnOff = true;
+	public static boolean OnOff;
 
 	public static void onInitializeClient() {
 		ClientButton.OnOff.registerOne(() -> {
