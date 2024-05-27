@@ -24,6 +24,7 @@ public class AutoFeedAnimalsClient implements ClientModInitializer {
 	public static final FeedAnimals Pig = new FeedAnimals();
 	public static final FeedAnimals Horse = new FeedAnimals();
 	public static final FeedAnimals Chicken = new FeedAnimals();
+	public static final FeedAnimals Wolf = new FeedAnimals();
 	public static final FeedAnimals Cat = new FeedAnimals();
 	public static final FeedAnimals Rabbit = new FeedAnimals();
 	public static final FeedAnimals Llama = new FeedAnimals();
@@ -57,6 +58,8 @@ public class AutoFeedAnimalsClient implements ClientModInitializer {
 
 		Horse.AddTypeFood(Items.GOLDEN_CARROT);
 		Horse.AddTypeFood(Items.GOLDEN_APPLE);
+		Horse.AddTypeFood(Items.ENCHANTED_GOLDEN_APPLE);
+		Horse.AddTypeFood(Items.APPLE);
 		Horse.AddTypeAnimal(HorseEntity.class);
 		Horse.AddTypeAnimal(DonkeyEntity.class);
 
@@ -65,21 +68,23 @@ public class AutoFeedAnimalsClient implements ClientModInitializer {
 		Chicken.AddTypeFood(Items.MELON_SEEDS);
 		Chicken.AddTypeFood(Items.PUMPKIN_SEEDS);
 		Chicken.AddTypeFood(Items.BEETROOT_SEEDS);
+		Chicken.AddTypeFood(Items.TORCHFLOWER_SEEDS);
+		Chicken.AddTypeFood(Items.PITCHER_POD);
 		Chicken.AddTypeAnimal(ChickenEntity.class);
 
 
-		Chicken.AddTypeFood(Items.ROTTEN_FLESH);
-		Chicken.AddTypeFood(Items.CHICKEN);
-		Chicken.AddTypeFood(Items.COOKED_CHICKEN);
-		Chicken.AddTypeFood(Items.PORKCHOP);
-		Chicken.AddTypeFood(Items.COOKED_PORKCHOP);
-		Chicken.AddTypeFood(Items.BEEF);
-		Chicken.AddTypeFood(Items.COOKED_BEEF);
-		Chicken.AddTypeFood(Items.RABBIT);
-		Chicken.AddTypeFood(Items.COOKED_RABBIT);
-		Chicken.AddTypeFood(Items.MUTTON);
-		Chicken.AddTypeFood(Items.COOKED_MUTTON);
-		Chicken.AddTypeAnimal(WolfEntity.class);
+		Wolf.AddTypeFood(Items.ROTTEN_FLESH);
+		Wolf.AddTypeFood(Items.CHICKEN);
+		Wolf.AddTypeFood(Items.COOKED_CHICKEN);
+		Wolf.AddTypeFood(Items.PORKCHOP);
+		Wolf.AddTypeFood(Items.COOKED_PORKCHOP);
+		Wolf.AddTypeFood(Items.BEEF);
+		Wolf.AddTypeFood(Items.COOKED_BEEF);
+		Wolf.AddTypeFood(Items.RABBIT);
+		Wolf.AddTypeFood(Items.COOKED_RABBIT);
+		Wolf.AddTypeFood(Items.MUTTON);
+		Wolf.AddTypeFood(Items.COOKED_MUTTON);
+		Wolf.AddTypeAnimal(WolfEntity.class);
 
 
 		Cat.AddTypeFood(Items.COD);
@@ -93,8 +98,10 @@ public class AutoFeedAnimalsClient implements ClientModInitializer {
 		Rabbit.AddTypeAnimal(RabbitEntity.class);
 
 
+		Llama.AddTypeFood(Items.WHEAT);
 		Llama.AddTypeFood(Items.HAY_BLOCK);
 		Llama.AddTypeAnimal(LlamaEntity.class);
+		Llama.AddTypeAnimal(TraderLlamaEntity.class);
 
 
 		Turtle.AddTypeFood(Items.SEAGRASS);
@@ -160,6 +167,7 @@ public class AutoFeedAnimalsClient implements ClientModInitializer {
 		Pig.Updeit(client);
 		Horse.Updeit(client);
 		Chicken.Updeit(client);
+		Wolf.Updeit(client);
 		Cat.Updeit(client);
 		Rabbit.Updeit(client);
 		Llama.Updeit(client);
