@@ -1,5 +1,6 @@
 package com.catmoska.auto_feed_animals.FeedAnimals;
 
+import com.catmoska.auto_feed_animals.AutoFeedAnimalsClient;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.entity.passive.AnimalEntity;
 import net.minecraft.item.Item;
